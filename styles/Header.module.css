@@ -1,0 +1,67 @@
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .desktopMenu {
+    display: none;
+  }
+  
+  .navLink {
+    margin-left: 1rem;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .mobileMenuButton {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .mobileNavLink {
+    padding: 0.5rem 0;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .desktopMenu {
+      display: flex;
+    }
+  
+    .mobileMenuButton {
+      display: none;
+    }
+  
+    .mobileMenu {
+      display: none;
+    }
+  }
